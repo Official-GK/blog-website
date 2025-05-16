@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>The Whispering House</title>
+    <link href="https://fonts.cdnfonts.com/css/blood-crow" rel="stylesheet" />
+    <style>
+      body {
+        font-family: 'Blood Crow', sans-serif;
+        background-image: url('https://wallpapers.com/images/hd/3d-horror-haunted-street-dzi9g0p3whld7u4x.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        color: #f5f5f5;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+      }
+
+      h3, h5, p, div {
+        font-family: 'Blood Crow', sans-serif;
+      }
+
+      .container {
+        width: 90%;
+        max-width: 1100px;
+        margin: auto;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.6);
+        box-shadow: 0 0 30px rgba(255, 0, 0, 0.2);
+      }
+
+      .main-flex {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: center;
+      }
+
+      .left-box {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.3); 
+        padding: 20px;
+        color: #f5f5f5; 
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        min-width: 250px;
+        backdrop-filter: blur(3px);
+      }
+
+      .left-box > div {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 10px;
+        transition: background-color 0.3s, transform 0.3s;
+        cursor: pointer;
+      }
+
+      .left-box > div:first-child {
+        background-color: rgb(7, 7, 109);
+        color: white;
+        height: 40px;
+        text-align: center;
+        font-weight: bold;
+        letter-spacing: 1px;
+      }
+
+      .left-box > div:not(:first-child):hover {
+        background-color: rgba(255, 0, 0, 0.2);
+        transform: translateX(5px);
+      }
+
+      .right-box {
+        background-color: rgba(0, 0, 0, 0.55); 
+        padding: 20px;
+        box-shadow: 0 0 20px rgba(255, 0, 0, 0.4); 
+        color: #f5f5f5;
+        max-width: 600px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .right-box::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.02) 0%, transparent 80%);
+        animation: fog 30s linear infinite;
+        z-index: 0;
+      }
+
+
+
+      .right-box * {
+        position: relative;
+        z-index: 1;
+      }
+
+      .right-box h5 {
+        background-color: rgba(100, 0, 0, 0.4);
+        padding: 8px;
+        border-left: 5px solid red;
+        font-size: 20px;
+        margin-top: 20px;
+        text-shadow: 1px 1px 2px black;
+      }
+
+      .right-box img {
+        width: 100%;
+        margin-bottom: 10px;
+        border: 2px solid rgba(255, 0, 0, 0.3);
+      }
+
+      .right-box p {
+        line-height: 1.5;
+        font-size: 16px;
+        text-shadow: 1px 1px 3px black;
+      }
+
+      h3 {
+        color: red;
+        font-size: 28px;
+        text-align: center;
+        margin-bottom: 30px;
+        text-shadow: 2px 2px 5px black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h3>The Whispering House: A Tale from Ravenmoor</h3>
+      <div class="main-flex">
+        <div class="left-box">
+          <div>CHAPTERS</div>
+          <div>The Arrival</div>
+          <div>The Locked Door That Shouldn't Exist</div>
+          <div>Whispers from the Walls</div>
+          <div>The Clock That Runs Backward</div>
+          <div>Portraits That Follow You</div>
+          <div>Voices Beneath the Floorboards</div>
+          <div>Vanishing Footprints in Dust</div>
+          <div>The Candle That Never Goes Out</div>
+          <div>The Blood Moon Ritual</div>
+          <div>The Final Scream</div>
+        </div>
+        <div class="right-box">
+          <h5>The House That Watches You Sleep</h5>
+          <img
+            src="https://images5.alphacoders.com/710/thumb-1920-710081.jpg"
+            alt="haunted house" height="500px"
+          />
+          <p>
+            They said the house was abandoned, but I saw a candle burning in the attic window.
+            The villagers of Ravenmoor warned me not to go near it — “It remembers,” they whispered.
+            I didn’t listen.
+            <br /><br />
+            The night I stepped inside, the air grew thick with rot and regret. The walls pulsed like they were alive, 
+            and shadows slithered across the floor — though I cast no light. A voice, brittle and cold, echoed from upstairs: 
+            “You’ve finally returned…”
+            <br /><br />
+            Every room held relics of a time that shouldn’t exist. A nursery with a cradle that rocked itself. A mirror 
+            that showed a reflection with no face. A diary dated 1892, yet freshly written in blood-red ink: “Don’t trust the man in the cellar.”
+            <br /><br />
+            I tried to leave. But the door I entered through had vanished — replaced by bricks and a whisper: <i>*Stay with us.*</i>
+          </p>
+          <h5>Recommendations</h5>
+          <p>
+            If you ever visit Ravenmoor, avoid the path lit by lanterns. And never — <b>never</b> knock twice.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
